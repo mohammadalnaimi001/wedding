@@ -1,7 +1,7 @@
 /** جميع معلومات الدعوة القابلة للتعديل في مكان واحد. الأوقات بتوقيت عمّان. */
 export const weddingConfig = {
   monogram: "A & M",
-  groomName: "أحمد بسام البنا",
+  groomName: "أحمد",
   groomShortName: "أحمد",
   groomFather: "بسام صالح البنا",
   brideName: "أميرته",
