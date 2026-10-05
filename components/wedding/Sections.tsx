@@ -235,6 +235,9 @@ export function LocationSection() {
   );
 }
 export function HennaSection() {
+  const formatHennaTime = (value: string) =>
+    formatTime(value).replace(/\d/g, (digit) => "٠١٢٣٤٥٦٧٨٩"[Number(digit)]);
+
   return (
     <section id="henna" className="henna-section section-anchor">
       <div className="henna-pattern" aria-hidden="true" />
@@ -250,6 +253,11 @@ export function HennaSection() {
           <div>
             <span>{formatDate(c.hennaDate, { weekday: "long" })}</span>
             <strong>{formatDate(c.hennaDate)}</strong>
+            <span>
+              من الساعة {formatHennaTime(c.hennaStartTime)} إلى الساعة{" "}
+              {formatHennaTime(c.hennaEndTime)} مساءً
+            </span>
+            <span>بتوقيت عمّان</span>
           </div>
           <i />
           <div>
